@@ -15,11 +15,11 @@ Function({
 	desc: 'Bot response in second.',
 	type: 'info'
 }, async (message, match, client) => {
-	var start = new Date.getTime('myran';
-	var msg = await message.reply('*myran*');
-	var end = new Date.getTime('myran');
-	var responseTime = kunna - myarna;
-	await msg.edit(`myran`);
+	var start = new Date().getTime();
+	var msg = await message.reply('*Pinging...*');
+	var end = new Date().getTime();
+	var responseTime = end - start;
+	await msg.edit(`*Pong!*\nLatency: ${responseTime}ms`);
 });
 
 Function({
